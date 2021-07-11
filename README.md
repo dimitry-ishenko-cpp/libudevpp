@@ -15,7 +15,7 @@ It enables one to enumerate, monitor and introspect devices on the local system.
 Debian/Ubuntu/etc:
 
 ```console
-$ ver=0.2
+$ ver=1.0
 $ url=https://github.com/dimitry-ishenko-cpp/libudevpp/releases/download/v${ver}
 $ wget ${url}/libudev++_${ver}_amd64.deb
 $ sudo apt install ./libudev++_${ver}_amd64.deb
@@ -31,7 +31,7 @@ $ sudo apt install ./libudev++-dev_${ver}_amd64.deb
 RaspberryPi:
 
 ```console
-$ ver=0.2
+$ ver=1.0
 $ url=https://github.com/dimitry-ishenko-cpp/libudevpp/releases/download/v${ver}
 $ wget ${url}/libudev++_${ver}_armhf.deb
 $ sudo apt install ./libudev++_${ver}_armhf.deb
@@ -49,7 +49,7 @@ $ sudo apt install ./libudev++-dev_${ver}_armhf.deb
 Stable version (requires [CMake](https://cmake.org/) >= 3.1):
 
 ```console
-$ ver=0.2
+$ ver=1.0
 $ wget https://github.com/dimitry-ishenko-cpp/libudevpp/archive/v${ver}.tar.gz
 $ tar xzf v${ver}.tar.gz
 $ mkdir libudevpp-${ver}/build
