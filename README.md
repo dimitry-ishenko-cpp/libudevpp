@@ -1,6 +1,6 @@
-# libudev++: Udev Library for C++
+# libudev++ – a Udev Library for C++
 
-The `libudev++` library is a C++ wrapper for
+The **libudev++** library is a C++ wrapper for
 [libudev](https://www.freedesktop.org/software/systemd/man/libudev.html).
 It enables one to enumerate, monitor and introspect devices on the local system.
 
@@ -14,46 +14,51 @@ It enables one to enumerate, monitor and introspect devices on the local system.
 
 Debian/Ubuntu/etc:
 
-```console
-$ ver=1.0
-$ url=https://github.com/dimitry-ishenko-cpp/libudevpp/releases/download/v${ver}
-$ wget ${url}/libudev++_${ver}_amd64.deb
-$ sudo apt install ./libudev++_${ver}_amd64.deb
+```shell
+$ p=libudev++
+$ v=1.0
+$ wget https://github.com/dimitry-ishenko-cpp/libudevpp/releases/download/v${v}/${p}_${v}_amd64.deb
+$ sudo apt install ./${p}_${v}_amd64.deb
 ```
 
-Install the development package, if you are planning to develop applications with `libudev++`:
+Install the development package, if you are planning to develop applications with **libudev++**:
 
-```console
-$ wget ${url}/libudev++-dev_${ver}_amd64.deb
-$ sudo apt install ./libudev++-dev_${ver}_amd64.deb
+```shell
+$ p=libudev++-dev
+$ v=1.0
+$ wget https://github.com/dimitry-ishenko-cpp/libudevpp/releases/download/v${v}/${p}_${v}_amd64.deb
+$ sudo apt install ./${p}_${v}_amd64.deb
 ```
 
 RaspberryPi:
 
-```console
-$ ver=1.0
-$ url=https://github.com/dimitry-ishenko-cpp/libudevpp/releases/download/v${ver}
-$ wget ${url}/libudev++_${ver}_armhf.deb
-$ sudo apt install ./libudev++_${ver}_armhf.deb
+```shell
+$ p=libudev++
+$ v=1.0
+$ wget https://github.com/dimitry-ishenko-cpp/libudevpp/releases/download/v${v}/${p}_${v}_armhf.deb
+$ sudo apt install ./${p}_${v}_armhf.deb
 ```
 
-Install the development package, if you are planning to develop applications with `libudev++`:
+Install the development package, if you are planning to develop applications with **libudev++**:
 
-```console
-$ wget ${url}/libudev++-dev_${ver}_armhf.deb
-$ sudo apt install ./libudev++-dev_${ver}_armhf.deb
+```shell
+$ p=libudev++-dev
+$ v=1.0
+$ wget https://github.com/dimitry-ishenko-cpp/libudevpp/releases/download/v${v}/${p}_${v}_armhf.deb
+$ sudo apt install ./${p}_${v}_armhf.deb
 ```
 
 ### From source
 
 Stable version (requires [CMake](https://cmake.org/) >= 3.1):
 
-```console
-$ ver=1.0
-$ wget https://github.com/dimitry-ishenko-cpp/libudevpp/archive/v${ver}.tar.gz
-$ tar xzf v${ver}.tar.gz
-$ mkdir libudevpp-${ver}/build
-$ cd libudevpp-${ver}/build
+```shell
+$ p=libudevpp
+$ v=1.0
+$ wget https://github.com/dimitry-ishenko/${p}/archive/v${v}.tar.gz
+$ tar xzf v${v}.tar.gz
+$ mkdir ${p}-${ver}/build
+$ cd ${p}-${ver}/build
 $ cmake ..
 $ make
 $ sudo make install
@@ -61,10 +66,11 @@ $ sudo make install
 
 Latest master (requires [git](https://git-scm.com/) and [CMake](https://cmake.org/) >= 3.1):
 
-```console
-$ git clone https://github.com/dimitry-ishenko-cpp/libudevpp.git
-$ mkdir libudevpp/build
-$ cd libudevpp/build
+```shell
+$ p=libudevpp
+$ git clone --recursive https://github.com/dimitry-ishenko/${p}.git
+$ mkdir ${p}/build
+$ cd ${p}/build
 $ cmake ..
 $ make
 $ sudo make install
@@ -72,7 +78,7 @@ $ sudo make install
 
 ## Developing with libudev++
 
-To develop with `libudev++` simply add `#include <udev++.hpp>` to your program
+To develop with **libudev++** simply add `#include <udev++.hpp>` to your program
 and `-ludev++` to your linker. Following are a few examples demonstrating its
 capabilities:
 
